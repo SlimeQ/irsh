@@ -6,5 +6,5 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "matrix-nio>=0.25.2",
-    "slack==0.0.1",
+    "slackclient>=2.9.4",
 ]

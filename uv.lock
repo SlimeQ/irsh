@@ -269,13 +269,13 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "matrix-nio" },
-    { name = "slack" },
+    { name = "slackclient" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "matrix-nio", specifier = ">=0.25.2" },
-    { name = "slack", specifier = "==0.0.1" },
+    { name = "slackclient", specifier = ">=2.9.4" },
 ]
 
 [[package]]
@@ -621,10 +621,16 @@ wheels = [
 ]
 
 [[package]]
-name = "slack"
-version = "0.0.1"
+name = "slackclient"
+version = "2.9.4"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/c9/a5/db6e0bf83941b38c15ffdd9ff25b8cecc8394878927c307e0bc5b9dcb4bc/slack-0.0.1.tar.gz", hash = "sha256:30dc7ce1e321c7a5d30068fbbb380ebfb6063069c9b980226c4f21edb54b806d", size = 2413 }
+dependencies = [
+    { name = "aiohttp" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ca/c4/f147d5602b060f76555688bc0d88d30c814b827602874c589674db46daeb/slackclient-2.9.4.tar.gz", hash = "sha256:ab79fefb5412d0595bc01d2f195a787597f2a617b6766562932ab9ffbe5cb173", size = 89588 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/29/cd/89aafa39d7b9d30c82f4f82f50e13ba826bb273ade972befb273c5f6c05e/slackclient-2.9.4-py2.py3-none-any.whl", hash = "sha256:a8cab9146795e23d66a03473b80dd23df8c500829dfa9d06b3e3d5aec0a2b293", size = 97128 },
+]
 
 [[package]]
 name = "typing-extensions"
