@@ -1,0 +1,4 @@
+#/bin/sh
+
+export PATH="$PATH:$(pwd)/bin"
+uv run python3 init

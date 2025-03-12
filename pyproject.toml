@@ -5,6 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "markovify>=0.9.4",
     "matrix-nio>=0.25.2",
-    "slackclient>=2.9.4",
+    "slack-sdk>=3.34.0",
+    "slackclient==1.0.0",
 ]
