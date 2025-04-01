@@ -1,6 +1,6 @@
 #!/usr/bin/fish
 
-if set -q argv[1]
+if not set -q argv[1]
     set who "$NICK"
 else
     set who "$argv"
